@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cmath>	
 #include <fstream>
-#include <fstream>
+#include "factorial.h"
 using namespace std;
 
 
