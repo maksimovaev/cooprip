@@ -4,6 +4,12 @@
 #include "factorial.h"
 using namespace std;
 
+double Sinus(float angle)
+{	angle *= (3.1415926535/180); 
+	float i = 0;
+	i = (angle-(pow(angle,3)/Factorial(3))+(pow(angle,5)/Factorial(5))-(pow(angle,7)/Factorial(7))+(pow(angle,9)/Factorial(9)));		
+	return i;
+}
 
 
 
@@ -38,7 +44,7 @@ for (int i = 0; i <181; ++i)
 
 	for (int i = 0; i < 361; ++i)
 	{
-		sin_znach[i]=(sin_num[i]-(pow(sin_num[i],3)/Factorial(3))+(pow(sin_num[i],5)/Factorial(5))-(pow(sin_num[i],7)/Factorial(7))+(pow(sin_num[i],9)/Factorial(9)));	
+		sin_znach[i]=Sinus(i);
 
 	}
  	for (int i = 0; i < 361; ++i)
